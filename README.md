@@ -36,53 +36,53 @@ For this dataset, there were ``` 100,000 rows```  and ``` 43 columns```.
 
 ### Explanatory Visuals
 
-![image](https://github.com/Souha-Kabtni/Celestial_Bodies_Detection/assets/133057039/e9561e69-9a2a-426e-9947-aaba70aad11f)
+![image](https://github.com/Souha-Kabtni/Celestial_Bodies_Detection/assets/133057039/8be7ede0-d659-4114-a919-c2572ec9a01c)
 
 In a clockwise direction, moving from top to bottom, the scatter polar shows that ...........................
 
 ![image](https://github.com/Souha-Kabtni/Celestial_Bodies_Detection/assets/133057039/f7aee84c-39b4-426a-9ecc-97d1019d4268)
 
-The line plot shows that QSO is by far the most distant celestial object for it is the most redshifted. Both GALAXY and STAR are not that distant from the earth with close Redshift values.
+The line plot shows that QSO is by far the most distant celestial object for it is the most redshifted. Both GALAXY and STAR are not that distant from the Earth with close Redshift values.
 
 ## Pre-processing:
 
-describe what I did + PCA!
+Having performed all data cleaning steps, my data set had to be scaled to avoid exploding weights. Besides, PCA was applied to reduce the feature space I am working with (I started with 42 features, and with PCA applied, I ended up with 23 features that helped capture 99% of the variance in the Target class variable. 
 
 ## Machine Learning Using the Following Models:
 
-    - Logistic Regression Model
-    - Random Forest Classifier
-    - KNN
-    - XGBoost
+    - k-nearest neighbors (KNN) Algorithm
+    - Random Forest Classifier Algorithm
+    - Logistic Regression Algorithm
+    - XGBoost Algorithm
     - Deep Learning using the Sequential model
 
 
 ## Models Evaluated & Results
 
-+ Logistic Regression Model (Testing Set):
++ k-nearest neighbors (KNN) Algorithm (Testing Set):
   
-    + : ``` 0.567 ``` 
-    + : ```  1,092.858 ``` 
+    + Accuracy score: ``` 0.97 ``` 
+    + 
  
-+ Random Forest Classifier (Testing Set):
++ Random Forest Classifier Algorithm (Testing Set):
 
-    + :```  0.183 ``` 
-    + :```  1,501.460 ``` 
+    + :```  0.98 ``` 
+    + 
 
-+ KNN (Testing Set):
++ Logistic Regression Algorithm:
 
-    + : ``` 0.596 ``` 
-    + :```  1,055.975```
+    + : ``` 0.99 ``` 
+    + 
 
-+ XGBoost (Testing Set):
++ XGBoost Algorithm (Testing Set):
 
-    + : ``` 0.596 ``` 
-    + :```  1,055.975```
+    + : ``` 0.99 ``` 
+    + 
 
 + Deep Learning using the Sequential model (Testing Set):
 
     + : ``` 0.596 ``` 
-    + :```  1,055.975```
+    + 
 
 
 The Final Model Chosen was ................... (talk about the number of layers, nodes, epochs used + any regularization technique used: Dropout, Early stopping, l1/l2, the time the model took to fit (to learn the connections))
