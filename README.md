@@ -23,21 +23,21 @@ For this dataset, there were ``` 100,000 rows```  and ``` 43 columns```.
 
 ### Exploratory Data Analysis
 
-    - A heatmap was visualized to display the relationships between feature/feature and feature/target. 
+    - A heatmap was visualized to display the feature/feature and feature/target relationships. 
     - Distplots were visualized for each feature/target relationship. 
     - This gave a good baseline for univariate EDA.
 
 ### Explanatory Data Analysis
 
-    - 1 line plot and one scatterpolar were chosen.
-    - The Scatter polar was chosen to showcase the Top most Important Features to the Target. 
+    - 1 line plot and 1 scatterpolar were chosen.
+    - The Scatter polar was chosen to showcase the Top 15 Most Important Features to the Target. 
     - The line plot was chosen to show how the 'Redshift' feature helps differentiate between the 3 celestial objects. 
 
 ### Explanatory Visuals
 
 ![image](https://github.com/Souha-Kabtni/Celestial_Bodies_Detection/assets/133057039/8be7ede0-d659-4114-a919-c2572ec9a01c)
 
-This scatter polar, clearly shows that redshift is the most important feature that helped us classify the data. So this is the best in terms of splitting ability. PetroR50_i, PetroR50_g, PetroR50_z, PetroR50_u,, and PetroR50_r are the following most important features that impact the distinguishing between all 3 celestial bodies. 
+This scatter polar, clearly shows that redshift is the most important feature that helped classify the data. So this is the best in terms of splitting ability. PetroR50_i, PetroR50_g, PetroR50_z, PetroR50_u, and PetroR50_r are the following most important features that impact the distinguishing between all 3 celestial bodies. 
 
 ![image](https://github.com/Souha-Kabtni/Celestial_Bodies_Detection/assets/133057039/f7aee84c-39b4-426a-9ecc-97d1019d4268)
 
@@ -53,7 +53,8 @@ Having performed all data cleaning steps, my data set had to be scaled to avoid 
     - Random Forest Classifier Algorithm
     - Logistic Regression Algorithm
     - XGBoost Algorithm
-    - Deep Learning using the Sequential model
+
+## Deep Learning using the Sequential model
 
 
 ## Models Evaluated & Results
@@ -97,13 +98,19 @@ The Final Model Chosen was ................... (talk about the number of layers,
 Using this model to make sales predictions about food items sold at various stores would not be very reliable. A prediction error of  $1,055.975 (that represents almost 52.8% of the mean values of the Item-Outlet sales) cannot be overlooked.
 
 
-## Recommendations
+## Strengths
 
-
+Since no cleaning was involved (no missing values, no duplicates, no inconsistent data, …), all the time was dedicated to the Modelling phase. Besides, all created models are accurate enough to classify these celestial objects.
 
 ## Limitations & Next Steps
 
+The ratio of the data is drastic: 52343 rows (52.343%) are classified as galaxies, 37232 rows (37.232%) are classified as stars, and only 10425 rows (10.425%) as quasars (although SMOTE was used to handle the imbalanced classes, it still "fail[s] to reach high levels of recall while creating undue complexity for the machine-learning pipeline." (From Medium Article entitled: Stop Using SMOTE to Treat Class Imbalance). So, other techniques might be used to better address class imbalance.
 
+## Recommendations
+
++ All created models can be used in the future to classify these celestial objects with great accuracy;
++ As there is data about the camera as well, we can perform analysis on them as well;
++ Some feature engineering might be involved.
 
 ## For Further Information
 For any additional questions, please contact:
