@@ -5,13 +5,12 @@
 
 Souha Kabtni
 
-## Classifying Celestial Bodies According to their Spectral Properties
+## Predicting Celestial Bodies According to their Spectral Properties
 
 The categorization of stars, galaxies, and quasars based on their spectral properties is a crucial concept in astronomy. By dividing stars into different categories based on factors such as their temperature, luminosity, and chemical composition, we can gain insight into their physical properties and evolutionary stages.
 
 
-Data Source:
-Click [here](https://docs.google.com/spreadsheets/d/1r0O_8CsKY4KMKlf2aHoOIxbXElmb_fVxeNreNhfS8ms/edit#gid=2032989002) to download the dataset.
+Data on Celestial Objects from the Sloan Digital Sky Survey - Data Release 18. Click [here](https://docs.google.com/spreadsheets/d/1r0O_8CsKY4KMKlf2aHoOIxbXElmb_fVxeNreNhfS8ms/edit#gid=2032989002) to download the dataset.
 
 For this dataset, there were ``` 100,000 rows```  and ``` 43 columns```.
 
@@ -38,7 +37,7 @@ For this dataset, there were ``` 100,000 rows```  and ``` 43 columns```.
 
 ![image](https://github.com/Souha-Kabtni/Celestial_Bodies_Detection/assets/133057039/8be7ede0-d659-4114-a919-c2572ec9a01c)
 
-In a clockwise direction, moving from top to bottom, the scatter polar shows that ...........................
+This scatter polar, clearly shows that redshift is the most important feature that helped us classify the data. So this is the best in terms of splitting ability. PetroR50_i, PetroR50_g, PetroR50_z, PetroR50_u,, and PetroR50_r are the following most important features that impact the distinguishing between all 3 celestial bodies. 
 
 ![image](https://github.com/Souha-Kabtni/Celestial_Bodies_Detection/assets/133057039/f7aee84c-39b4-426a-9ecc-97d1019d4268)
 
