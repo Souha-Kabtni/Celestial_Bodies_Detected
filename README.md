@@ -54,7 +54,7 @@ Having performed all data cleaning steps, my data set had to be scaled to avoid 
     - Logistic Regression Algorithm
     - XGBoost Algorithm
 
-## Deep Learning 
+## Deep Learning Using:
     - Sequential model
 
 
