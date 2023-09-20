@@ -37,7 +37,7 @@ For this dataset, there were ``` 100,000 rows```  and ``` 43 columns```.
 
 ![image](https://github.com/Souha-Kabtni/Celestial_Bodies_Detection/assets/133057039/8be7ede0-d659-4114-a919-c2572ec9a01c)
 
-This scatter polar, clearly shows that redshift is the most important feature that helped classify the data. So this is the best in terms of splitting ability. PetroR50_i, PetroR50_g, PetroR50_z, PetroR50_u, and PetroR50_r are the following most important features that impact the distinguishing between all 3 celestial bodies. 
+This scatter polar, clearly shows that redshift is the most important feature that helped classify the data. So this is the best in terms of splitting ability. *PetroR50_i, PetroR50_g, PetroR50_z, PetroR50_u, and PetroR50_r are the following most important features that impact the distinguishing between all 3 celestial bodies. (*PetroR50_(Photometric band): These parameters are important for characterizing the sizes of objects in the SDSS data and how the sizes of the objects vary at different wavelengths)
 
 ![image](https://github.com/Souha-Kabtni/Celestial_Bodies_Detection/assets/133057039/f7aee84c-39b4-426a-9ecc-97d1019d4268)
 
@@ -54,7 +54,8 @@ Having performed all data cleaning steps, my data set had to be scaled to avoid 
     - Logistic Regression Algorithm
     - XGBoost Algorithm
 
-## Deep Learning using the Sequential model
+## Deep Learning 
+    - Sequential model
 
 
 ## Models Evaluated & Results
@@ -79,7 +80,7 @@ Having performed all data cleaning steps, my data set had to be scaled to avoid 
     + : ``` 0.99 ``` 
     + 
 
-+ Deep Learning using the Sequential model (Testing Set):
++ Sequential model (Testing Set):
 
     + : ``` 0.596 ``` 
     + 
