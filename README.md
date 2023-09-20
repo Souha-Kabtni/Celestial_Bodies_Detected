@@ -7,7 +7,7 @@ Souha Kabtni
 
 ## Predicting Celestial Bodies According to their Spectral Properties
 
-The categorization of stars, galaxies, and quasars based on their spectral properties is a crucial concept in astronomy. By dividing stars into different categories based on factors such as their temperature, luminosity, and chemical composition, we can gain insight into their physical properties and evolutionary stages.
+The categorization of stars, galaxies, and quasars based on their spectral properties is a crucial concept in the field of Astronomy. By dividing stars into different categories based on factors such as their temperature, luminosity, and chemical composition, we can gain insight into their physical properties and evolutionary stages. Therefore, in this project, I will employ several classification algorithms to help classify observations of space to either stars, galaxies, or quasars based on their observed properties.
 
 
 Data on Celestial Objects from the Sloan Digital Sky Survey - Data Release 18. Click [here](https://docs.google.com/spreadsheets/d/1r0O_8CsKY4KMKlf2aHoOIxbXElmb_fVxeNreNhfS8ms/edit#gid=2032989002) to download the dataset.
