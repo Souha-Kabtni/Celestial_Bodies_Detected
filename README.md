@@ -63,13 +63,13 @@ Having performed all data cleaning steps, my data set had to be scaled to avoid 
 
 + Below are the best sores delivered by each model (Defaulted or Tunned)
 
-| Model | Accuracy Score | Recall Scores `GALAXY` |Recall Scores `QSO`|Recall Scores `STAR`|AUC Scores `GALAXY`|AUC Scores `QSO`|AUC Scores `STAR`|
-| :---         |     :---:      |          ---: |          ---: |          ---: |          ---: |          ---: |          ---: |
-| k-nearest neighbors (KNN) Algorithm (Testing Set) | 0.97 | 0.97 | 0.94 | 0.99 | 0.99 | 0.98 | 0.99 |
-| Random Forest Classifier Algorithm (Testing Set) | 0.99 | 0.99 | 0.94 | 0.99 | 1.00 | 1.00 | 1.00 |
-| Logistic Regression Algorithm (Testing Set) | 0.99 | 0.99 | 0.96 | 1.00 | 0.99 | 1.00 | 1.00 |
-| XGBoost Algorithm (Testing Set) | 0.99 | 0.99 | 0.96 | 1.00 | 0.99 | 1.00 | 1.00 |
-| Sequential model (Testing Set) | 0.99 | 0.99 | 0.96 | 1.00 | - | - | - |
+| Model | Accuracy Score | Recall Scores `GALAXY` |Recall Scores `QSO`|Recall Scores `STAR`|AUC Scores `GALAXY`|AUC Scores `QSO`|AUC Scores `STAR`| Wall time (prediction time)|
+| :---         |     :---:      |          ---: |          ---: |          ---: |          ---: |          ---: |          ---: |          ---: |
+| k-nearest neighbors (KNN) Algorithm (Testing Set) | 0.97 | 0.97 | 0.94 | 0.99 | 0.99 | 0.98 | 0.99 | 35 s |
+| Random Forest Classifier Algorithm (Testing Set) | 0.99 | 0.99 | 0.94 | 0.99 | 1.00 | 1.00 | 1.00 | 1.6 s |
+| Logistic Regression Algorithm (Testing Set) | 0.99 | 0.99 | 0.96 | 1.00 | 0.99 | 1.00 | 1.00 | 25 ms |
+| XGBoost Algorithm (Testing Set) | 0.99 | 0.99 | 0.96 | 1.00 | 0.99 | 1.00 | 1.00 | 51.7 ms |
+| Sequential model (Testing Set) | 0.99 | 0.99 | 0.96 | 1.00 | - | - | - | 2.64 s |
 
 
 The Final Model Chosen was ................... (talk about the number of layers, nodes, epochs used + any regularization technique used: Dropout, Early stopping, l1/l2, the time the model took to fit (to learn the connections))
