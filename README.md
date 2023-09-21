@@ -69,7 +69,7 @@ Having performed all data cleaning steps, my data set had to be scaled to avoid 
 | Random Forest Classifier Algorithm (Testing Set) | 0.99 | 0.99 | 0.94 | 0.99 | 1.00 | 1.00 | 1.00 |
 | Logistic Regression Algorithm (Testing Set) | 0.99 | 0.99 | 0.96 | 1.00 | 0.99 | 1.00 | 1.00 |
 | XGBoost Algorithm (Testing Set) | 0.99 | 0.99 | 0.96 | 1.00 | 0.99 | 1.00 | 1.00 |
-| Sequential model (Testing Set) | 0.97 | 0.97 | 0.94 | 0.99 | 0.99 | 0.98 | 0.99 |
+| Sequential model (Testing Set) | 0.99 | 0.99 | 0.96 | 1.00 | - | - | - |
 
 
 The Final Model Chosen was ................... (talk about the number of layers, nodes, epochs used + any regularization technique used: Dropout, Early stopping, l1/l2, the time the model took to fit (to learn the connections))
