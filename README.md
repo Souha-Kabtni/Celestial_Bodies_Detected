@@ -72,15 +72,8 @@ Having performed all data cleaning steps, my data set had to be scaled to avoid 
 | Sequential model (Testing Set) | 0.99 | 0.99 | 0.96 | 1.00 | - | - | - | 2.64 s |
 
 
-The Final Model Chosen was ................... (talk about the number of layers, nodes, epochs used + any regularization technique used: Dropout, Early stopping, l1/l2, the time the model took to fit (to learn the connections))
+All trained models delivered great results with high Accuracy scores. My final model was chosen on the basis of the best-delivered AUC results as well as the less time the model took to make its predictions. In this vein, the XGBoost Algorithm, which delivered an accuracy score of 0.99 and predicted the values of the test set in only 51.7 ms was chosen as my final model.
 
-1. classification_report
-
-2. ConfusionMatrixDisplay.from_predictions
-
-3. 
-
-4.
 
 Using this model to make sales predictions about food items sold at various stores would not be very reliable. A prediction error of  $1,055.975 (that represents almost 52.8% of the mean values of the Item-Outlet sales) cannot be overlooked.
 
@@ -96,6 +89,8 @@ The ratio of the data is drastic: 52343 rows (52.343%) are classified as galaxie
 ## Recommendations
 
 + All created models can be used in the future to classify these celestial objects with great accuracy;
++ Although delivered the best results, XGBoost was not tuned. There is still potential for XGBoost to deliver more accurate predictions.
++ Deep Learning models were not 'heavily' tuned, and if so, better results might be expected;
 + As there is data about the camera as well, we can perform analysis on them as well;
 + Some feature engineering might be involved.
 
