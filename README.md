@@ -63,13 +63,13 @@ Having performed all data cleaning steps, my data set had to be scaled to avoid 
 
 + Below are the best sores delivered by each model (Defaulted or Tunned)
 
-| Model | Accuracy Score | Recall Scores `GALAXY` |Recall Scores `QSO`|Recall Scores `STAR`|AUC Scores `GALAXY`|AUC Scores `QSO`|AUC Scores `STAR`| Wall time (prediction time)|
+| Model (Testing Set)  | Accuracy Score | Recall Scores `GALAXY` |Recall Scores `QSO`|Recall Scores `STAR`|AUC Scores `GALAXY`|AUC Scores `QSO`|AUC Scores `STAR`| Wall time (prediction time)|
 | :---         |     :---:      |          ---: |          ---: |          ---: |          ---: |          ---: |          ---: |          ---: |
-| k-nearest neighbors (KNN) Algorithm (Testing Set) | 0.97 | 0.97 | 0.94 | 0.99 | 0.99 | 0.98 | 0.99 | 35 s |
-| Random Forest Classifier Algorithm (Testing Set) | 0.99 | 0.99 | 0.94 | 0.99 | 1.00 | 1.00 | 1.00 | 1.6 s |
-| Logistic Regression Algorithm (Testing Set) | 0.99 | 0.99 | 0.96 | 1.00 | 0.99 | 1.00 | 1.00 | 25 ms |
-| XGBoost Algorithm (Testing Set) | 0.99 | 0.99 | 0.96 | 1.00 | 0.99 | 1.00 | 1.00 | 51.7 ms |
-| Sequential model (Testing Set) | 0.99 | 0.99 | 0.96 | 1.00 | - | - | - | 2.64 s |
+| k-nearest neighbors (KNN) Algorithm | 0.97 | 0.97 | 0.94 | 0.99 | 0.99 | 0.98 | 0.99 | 35 s |
+| Random Forest Classifier Algorithm | 0.99 | 0.99 | 0.94 | 0.99 | 1.00 | 1.00 | 1.00 | 1.6 s |
+| Logistic Regression Algorithm | 0.99 | 0.99 | 0.96 | 1.00 | 0.99 | 1.00 | 1.00 | 25 ms |
+| XGBoost Algorithm | 0.99 | 0.99 | 0.96 | 1.00 | 0.99 | 1.00 | 1.00 | 51.7 ms |
+| Sequential model | 0.99 | 0.99 | 0.96 | 1.00 | - | - | - | 2.64 s |
 
 
 All trained models delivered great results with high Accuracy scores. My final model was chosen on the basis of the best-delivered AUC results as well as the less time the model took to make its predictions. In this vein, the XGBoost Algorithm, which delivered an accuracy score of 0.99 and predicted the values of the test set in only 51.7 ms was chosen as my final model.
