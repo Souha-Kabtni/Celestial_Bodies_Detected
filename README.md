@@ -65,18 +65,14 @@ Having performed all data cleaning steps, my data set had to be scaled to avoid 
 
 | Model (Testing Set)  | Accuracy Score | Recall Scores `GALAXY` |Recall Scores `QSO`|Recall Scores `STAR`|AUC Scores `GALAXY`|AUC Scores `QSO`|AUC Scores `STAR`| Wall time (prediction time)|
 | :---         |     :---:      |          ---: |          ---: |          ---: |          ---: |          ---: |          ---: |          ---: |
-| k-nearest neighbors (KNN) Algorithm | 0.97 | 0.97 | 0.94 | 0.99 | 0.99 | 0.98 | 0.99 | 35 s |
-| Random Forest Classifier Algorithm | 0.99 | 0.99 | 0.94 | 0.99 | 1.00 | 1.00 | 1.00 | 1.6 s |
-| Logistic Regression Algorithm | 0.99 | 0.99 | 0.96 | 1.00 | 0.99 | 1.00 | 1.00 | 25 ms |
-| XGBoost Algorithm | 0.99 | 0.99 | 0.96 | 1.00 | 0.99 | 1.00 | 1.00 | 51.7 ms |
-| Sequential model | 0.99 | 0.99 | 0.96 | 1.00 | - | - | - | 2.64 s |
+| k-nearest neighbors (KNN) Algorithm | 0.98 | 0.97 | 0.98 | 0.99 | 0.99 | 1.00 | 1.00 | 1min 36s |
+| Random Forest Classifier Algorithm | 0.98 | 0.99 | 0.96 | 0.99 | 1.00 | 1.00 | 1.00 | 2.19 s |
+| Logistic Regression Algorithm | 0.98 | 0.98 | 0.96 | 1.00 | 0.99 | 1.00 | 1.00 | 50.7 ms |
+| XGBoost Algorithm | 0.99 | 0.98 | 0.96 | 1.00 | 0.99 | 1.00 | 1.00 | 73.1 ms |
+| Sequential model | 0.99 | 0.98 | 0.98 | 1.00 | - | - | - | 2.69 s |
 
 
-All trained models delivered great results with high Accuracy scores. My final model was chosen on the basis of the best-delivered AUC results as well as the less time the model took to make its predictions. In this vein, the XGBoost Algorithm, which delivered an accuracy score of 0.99 and predicted the values of the test set in only 51.7 ms was chosen as my final model.
-
-
-Using this model to make sales predictions about food items sold at various stores would not be very reliable. A prediction error of  $1,055.975 (that represents almost 52.8% of the mean values of the Item-Outlet sales) cannot be overlooked.
-
+All trained models delivered great results with high Accuracy scores. My final model was chosen on the basis of the best-delivered AUC results as well as the less time the model took to make its predictions. In this vein, the XGBoost Algorithm, which delivered an accuracy score of 0.98 and predicted the values of the test set in only 73.1 ms was chosen as my final model.
 
 ## Strengths
 
